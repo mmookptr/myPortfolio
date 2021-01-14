@@ -1,0 +1,17 @@
+body {
+    font-family: 'Anaheim';
+    background-color: #d4cfc9;
+}
+
+ื.navbar {
+    background-color: transparent;
+}
+
+.nav-content {
+    margin: auto !important;
+}
+
+.title {
+    font-size: 1.5rem;
+    margin-right: 300px;
+}
