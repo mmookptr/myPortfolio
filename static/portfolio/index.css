@@ -1,17 +1,72 @@
 body {
     font-family: 'Anaheim';
-    background-color: #d4cfc9;
+    background-image: url(./../background.jpeg);
+    width: 100%;
+    
 }
 
-ื.navbar {
-    background-color: transparent;
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.nav-text{
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+a {
+    color: black !important;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
 }
 
 .nav-content {
     margin: auto !important;
 }
 
-.title {
+.header {
     font-size: 1.5rem;
-    margin-right: 300px;
+    margin-right: 400px;
 }
+
+.greeting {
+    background: url("./..//giphy2.gif");
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    width: 100%;
+    text-align: center;
+    margin-top: 190px;
+    -webkit-background-clip: text;
+    font-size: 100px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.2);
+  }
+
+  .greeting2 {
+      text-align: center;
+  }
+
+  .about {
+      margin-top: 500px;
+      margin-left: 300px;
+      margin-bottom: 100px;
+  }
+
+  .content-title {
+      font-size: 3rem;
+      margin-bottom: 75px;
+  }
