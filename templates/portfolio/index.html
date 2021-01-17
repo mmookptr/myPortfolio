@@ -7,24 +7,83 @@
         <link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
     </head>
     <body>
-        <nav class="navbar sticky-top">
+        <nav class="navbar sticky-top" id="navbar">
             <div class="nav-content">
                 <a class='nav-text header' href="#">Portfolio</a>
                 <a class="nav-text" href="#about">About</a>
                 <a class="nav-text" href="#service">Service</a>
                 <a class='nav-text' href="#project">Project</a>
                 <a class='nav-text' href="#contact">Contact</a> 
-                <a class='nav-text' href="#question">Q&A</a> 
             </div>
         </nav>
-        <h1 class="greeting">Hi, I'm Patteera</h1>
-        <h2 class="greeting2">and I'm a developer</h2>
+        <div class="home">
+            <h1 class="greeting">Hi, I'm Patteera</h1>
+            <h2 class="greeting2">and I'm a developer</h2>
+        </div>
 
-        <div class="about" id="about"> 
+        <h2 class="page-cut" id="about">P</h2>
+        <div class="about"> 
             <h1 class="content-title">ABOUT</h1>
+            <div class="about-content">
+                <p class="about-info">
+                    I'm a 20 year old third-year Software and Knowledge Engineering 
+                    at Kasetsart University, Thailand.Throughout my years of studying I have gained 
+                    various knowledge and experience relating to the field. 
+                </p>
+                <div class="content-spacing" >
+                    <span class="about-topic">Name: </span>
+                    <span class="about-info">Patteera Likitamnuayporn</span>
+                </div>
+                <div class="content-spacing">
+                    <span class="about-topic">Date of birth: </span>
+                    <span class="about-info">31 October 2000</span>
+                </div>
+                <div class="content-spacing">
+                    <span class="about-topic">Address: </span>
+                    <span class="about-info">47/57 Laddarom Bangbon4 Nongkham Bangkok Thailand</span>
+                </div>
+                <div class="content-spacing">
+                    <span class="about-topic">Zip code: </span>
+                    <span class="about-info">10160</span>
+                </div>
+                <div class="content-spacing">
+                    <span class="about-topic">Hobbies: </span>
+                    <span class="about-info">sports, music, movies</span>
+                </div>
+                <div class="content-spacing">
+                    <span class="about-topic">Skills: </span>
+                    <span class="about-info">HTML, CSS, Python</span>
+                </div>
+            </div>
 
             <!-- <img src="/static/profile-pic.jpg" alt=""> -->
         </div>
+        <div class="service" id="service">
+            <h1 class="content-title">Service</h1>
+            <div class="service-content">
+                <div class="service-info">
+                    <img src="" alt="">
+                </div>
+                <div class="service-info">
+                    <p>service #2</p>
+                </div>
+                <div class="service-info">
+                    <p>service #3 </p>
+                </div>
+            </div>
+        </div>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+          <script>
+                var prevScrollpos = window.pageYOffset;
+                window.onscroll = function() {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-50px";
+                }
+                prevScrollpos = currentScrollPos;
+                }
+          </script>
     </body>
 </html>
