@@ -26,7 +26,8 @@ SECRET_KEY = '^t@t9w4mi(=^_eceelf(l=4m1&!98abvo^+y5l1x6^#ui7hetv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['http://mmookpptr.pythonanywhere.com/',
+                   'mmookpptr.pythonanywhere.com', ]
 
 
 # Application definition
