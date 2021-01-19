@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from portfolio import views as portfolio_views
+from portfolio import views
 
 app_name = "Portfolio"
 
@@ -23,3 +24,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", portfolio_views.index, name="index"),
 ]
+

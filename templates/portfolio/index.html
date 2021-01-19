@@ -24,6 +24,7 @@
         <h2 class="page-cut" id="about">P</h2>
         <div class="about"> 
             <h1 class="content-title">ABOUT</h1>
+            <img src="/static/profile-pic.jpg" alt="" class="profile-pic">
             <div class="about-content">
                 <p class="about-info">
                     I'm a 20 year old third-year Software and Knowledge Engineering 
@@ -56,7 +57,6 @@
                 </div>
             </div>
 
-            <!-- <img src="/static/profile-pic.jpg" alt=""> -->
         </div>
 
         <h2 class="page-cut" id="service">P</h2>
@@ -82,6 +82,65 @@
         <h2 class="page-cut" id="project">P</h2>
         <div class="project">
             <h1 class="content-title">Projects</h1>
+            <div class="project-content">
+                <a href="https://github.com/mmookptr/noodle-jump.git">
+                    <div class="project-info">
+                        <img src="/static/project-1.png" alt="" class="img-project">
+                        <br>
+                        <p class="project-topic">Noodle jump</p>
+                        <p class="project-description">first-year python arcade project </p>
+                    </div>
+                </a>
+            </div>
+            <div class="project-content">
+                <a href="https://github.com/mmookptr/evaluately.git">
+                    <div class="project-info">
+                        <img src="/static/project-2.jpg" alt="" class="img-project">
+                        <br>
+                        <p class="project-topic">Evaluately</p>
+                        <p class="project-description">second-year django web project </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <h2 class="page-cut-contact" id="contact">P</h2>
+        <div class="contact">
+            <h1 class="content-title">Contact</h1>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <img src="/static/address-icon.png" alt="" class="contact-icon">
+                    <p class="contact-topic">Address</p>
+                    <p class="contact-description">47/57 Laddarom Bangbon4 Nongkham Bangkok Thailand 10160</p>
+                </div>
+                <div class="contact-info">
+                    <img src="/static/email-icon.png" alt="" class="contact-icon">
+                    <p class="contact-topic">Email</p>
+                    <p class="contact-description">patteera.lik@gmail.com</p>
+                </div>
+                <div class="contact-info">
+                    <img src="/static/phone-icon.png" alt="" class="contact-icon">
+                    <p class="contact-topic">Phone</p>
+                    <p class="contact-description">+66 89 6838312</p>
+                </div>
+            </div>
+            <p class="contact-option">Or </p>
+            <div class="message-box">
+                <form method="POST">
+                    {% csrf_token%}
+                    <div class="message-box-content">
+                        {{form.email}}
+                    </div>
+                    <div class="message-box-content">
+                        {{form.topic}}
+                    </div>
+                    <div class="message-box-content">
+                        {{form.message}}
+                    </div>
+                    <input type="submit" class="submit-button">
+                </form>
+            </div>
+
         </div>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
           <script>
