@@ -86,7 +86,8 @@ a {
 }
 
 .about {
-    margin-left: 20%;
+    max-width: 720px;
+    margin: auto;
     margin-bottom: 10%;
 }
 
@@ -97,7 +98,7 @@ a {
 
 .about-content {
     font-size: 1.25rem;
-    margin-left: 35%;
+    margin-left: 55%;
     width: 55%;
     margin-top: 10%;
 }
@@ -115,12 +116,12 @@ a {
 }
 
 .service {
-    margin-left: 20%;
+    max-width: 720px;
+    margin: auto;
     margin-bottom: 40%;
 }
 
 .service-content {
-    margin-left: 15%;
     margin-top: 100px;
     font-size: 1.25rem;
 }
@@ -130,7 +131,7 @@ a {
     height: 300px;
     float: left;
     padding: 0 10px;
-    margin-right: 20px;
+    margin-right: 60px;
     margin-bottom: 20px;
     background: white;
     box-shadow: black;
@@ -156,12 +157,13 @@ a {
 }
 
 .project {
-    margin-left: 20%;
-    margin-bottom:40%;
+    max-width: 720px;
+    margin: auto;
+    margin-bottom: 47%;
 }
 
 .project-content {
-    margin-left: 15%;
+    margin: auto;
     margin-top: 100px;
     font-size: 1.25rem;
 }
@@ -171,7 +173,7 @@ a {
     height: 350px;
     float: left;
     padding: 0 10px;
-    margin-right: 20px;
+    margin-right: 60px;
     margin-bottom: 20px;
     background: white;
     box-shadow: black;
@@ -204,22 +206,23 @@ a {
 }
 
 .contact {
-    margin-left: 20%;
+    max-width: 720px;
+    margin: auto;
+    margin-bottom: 40%;
 }
 
 .contact-content {
-    margin-left: 5%;
     margin-top: 100px;
     font-size: 1.25rem;
 }
 
 .contact-info {
-    width: 275px;
-    height: 175px;
+    width: 30%;
+    height: 190px;
     float: left;
     padding: 0 10px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     background: white;
     box-shadow: black;
     border-radius: 10px;
@@ -241,26 +244,27 @@ a {
 
 .contact-icon {
     margin-top: 10%;
-    margin-left: 40%;
+    margin-left: 37%;
     margin-bottom: 2%;
 }
 
 .contact-email {
-    width: 55%;
-    height: 5%;
+    width: 500px;
+    height: 50px;
 }
 
 .message-box{
-    margin-left: 20%;
+    margin-left: 15%;
+    margin-top: 5%;
     font-size: 1.25rem;
 
 }
 
 .contact-option {
     margin-top: 27%;
-    margin-left: 40%;
     font-weight: bolder;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 .message-box-content {
@@ -268,13 +272,13 @@ a {
 }
 
 .message-topic {
-    width: 55%;
-    height: 5%;
+    width: 500px;
+    height: 50px;
 }
 
 .submit-button {
-    width: 10%;
-    height: 5%;
+    width: 100px;
+    height: 50px;
     background-color: white;
     border-radius: 10px;
     border: 0px;
